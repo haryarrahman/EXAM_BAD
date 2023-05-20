@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="View.ProductForm">
+  <splitpane id="23db9" binding="rootPanel">
+    <constraints>
+      <xy x="20" y="20" width="681" height="517"/>
+    </constraints>
+    <properties>
+      <dividerLocation value="200"/>
+      <dividerSize value="0"/>
+      <orientation value="0"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="27dc6" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="0">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <splitpane position="left"/>
+        </constraints>
+        <properties>
+          <alignmentX value="0.0"/>
+          <alignmentY value="0.0"/>
+          <minimumSize width="169" height="30"/>
+          <preferredSize width="169" height="30"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="9c4cf" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="5" left="0" bottom="5" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f81d5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="20" style="1"/>
+                  <foreground color="-16777216"/>
+                  <text value="Product"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="56bce" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-6302895"/>
+              <enabled value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="4aba8" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="50" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-6302895"/>
+                  <enabled value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="ca282" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="140" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Arial" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="Product ID         :"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                  <component id="84259" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="140" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Arial" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <labelFor value="76895"/>
+                      <text value="Nama Product   :"/>
+                    </properties>
+                  </component>
+                  <component id="cc7fb" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="140" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Arial" size="14" style="1"/>
+                      <foreground color="-16777216"/>
+                      <labelFor value="58cef"/>
+                      <text value="Stock                  :"/>
+                    </properties>
+                  </component>
+                  <component id="76895" class="javax.swing.JTextField" binding="fieldProductName">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-9627"/>
+                      <horizontalAlignment value="2"/>
+                    </properties>
+                  </component>
+                  <component id="58cef" class="javax.swing.JTextField" binding="fieldProductStock">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-9627"/>
+                      <horizontalAlignment value="2"/>
+                    </properties>
+                  </component>
+                  <component id="c6263" class="javax.swing.JTextField" binding="fieldProductId">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-9627"/>
+                      <horizontalAlignment value="2"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="d8718" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <splitpane position="right"/>
+        </constraints>
+        <properties>
+          <background color="-2630684"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="74451" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="10">
+            <margin top="5" left="5" bottom="10" right="5"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="1" indent="1" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2630684"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9e7f9" class="javax.swing.JButton" binding="simpanButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Simpan"/>
+                </properties>
+              </component>
+              <component id="6c4cd" class="javax.swing.JButton" binding="keluarButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Keluar"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4def4" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="50" bottom="10" right="10"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2630684"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <scrollpane id="f94de" binding="tableScrollPane">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="500" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <background color="-71781"/>
+                  <foreground color="-2630684"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b0657" class="javax.swing.JTable" binding="tableProduct">
+                    <constraints/>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <autoCreateRowSorter value="false"/>
+                      <background color="-71781"/>
+                      <font name="Arial" size="14" style="0"/>
+                      <foreground color="-16777216"/>
+                      <gridColor color="-16777216"/>
+                      <rowHeight value="18"/>
+                      <rowMargin value="0"/>
+                      <selectionBackground color="-71781"/>
+                      <selectionForeground color="-16777216"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="b81fe" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Arial" size="14" style="1"/>
+                  <foreground color="-16777216"/>
+                  <text value="Table Product"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </splitpane>
+</form>
