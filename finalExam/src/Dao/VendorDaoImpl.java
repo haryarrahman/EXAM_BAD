@@ -1,7 +1,7 @@
 package Dao;
 
 import Entity.Vendor;
-import Util.DaoService;
+import Util.DaoServiceVendor;
 import Util.MySQLConnection;
 
 import java.sql.Connection;
@@ -11,7 +11,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VendorDaoImpl implements DaoService<Vendor> {
+public class VendorDaoImpl implements DaoServiceVendor<Vendor> {
+
     @Override
     public List<Vendor> fetchAll() throws SQLException, ClassNotFoundException {
 
@@ -55,5 +56,29 @@ public class VendorDaoImpl implements DaoService<Vendor> {
         }
 
         return result;
+    }
+
+
+    @Override
+    public Vendor findById(int vendorID) throws SQLException, ClassNotFoundException {
+        Vendor vendor = null;
+        String query = "SELECT * FROM Vendor WHERE Vendor_ID = ?";
+
+        try (Connection connection = MySQLConnection.createConnection()) {
+            try (PreparedStatement ps = connection.prepareStatement(query)) {
+                ps.setInt(1, vendorID);
+
+                try (ResultSet rs = ps.executeQuery()) {
+                    if (rs.next()) {
+                        vendor = new Vendor();
+                        vendor.setVendor_ID(rs.getInt("Vendor_ID"));
+                        vendor.setVendor_Name(rs.getString("Vendor_Name"));
+                        vendor.setVendor_Add(rs.getString("Vendor_Add"));
+                    }
+                }
+            }
+        }
+
+        return vendor;
     }
 }
